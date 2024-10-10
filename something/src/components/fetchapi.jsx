@@ -8,7 +8,7 @@ function FetchApi({ moviename, fn }) {
         let response = await fetch(url);
         let data = await response.json();
         if (typeof fn == "function") {
-          //type of returns a string
+          //typeof returns a string
           fn(data.Search[0]); // Pass the first movie data to Home that is relevant data
         }
       } catch (error) {
