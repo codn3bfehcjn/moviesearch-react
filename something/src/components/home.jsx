@@ -20,7 +20,7 @@ function Home() {
       <Input movie={setmoviename}></Input>
       <div>
         <div className="font-edu flex justify-center text-metal text-lg">
-          {data.title && ( //conditional rendering if data does not come do not render it.
+          {data.title && ( //conditional rendering if data does not come do not render it (truth and falsy values )
             <p>
               <strong>TITLE :- </strong> {data.title.toUpperCase()}
             </p>
